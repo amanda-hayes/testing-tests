@@ -27,7 +27,7 @@ const validateInput = (text, notEmpty, isNumber) => {
 
 exports.checkAndGenerate = (name, age) => {
   if (!validateInput(name, true, false) || !validateInput(age, false, true)) {
-    return;
+    return false;
   }
   return generateText(name, age);
 };

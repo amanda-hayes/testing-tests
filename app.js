@@ -22,10 +22,7 @@ const addUser = () => {
   }
 
   const userList = document.querySelector(".user-list");
-  const outputText = generateText(
-    newUserNameInput.value,
-    newUserAgeInput.value
-  );
+
   const element = createElement("li", outputText, "user-item");
   userList.appendChild(element);
 };
